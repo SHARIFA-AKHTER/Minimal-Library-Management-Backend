@@ -5,7 +5,7 @@ import { sendResponse } from '../../utils/sendResponse';
 import { Book } from '../book/book.model';
 import { Borrow } from './borrow.model';
 
-
+//controller
 export const borrowBook:RequestHandler = async (req, res) => {
    console.log('Incoming request body:', req.body);
     const {book, quantity, dueDate } = req.body;
